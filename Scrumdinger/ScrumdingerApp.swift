@@ -2,7 +2,7 @@
 //  ScrumdingerApp.swift
 //  Scrumdinger
 //
-//  Created by GIGL iOS on 11/07/2022.
+//  Created by Tes on 11/07/2022.
 //
 
 import SwiftUI
