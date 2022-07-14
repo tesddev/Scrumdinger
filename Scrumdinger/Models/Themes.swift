@@ -35,6 +35,20 @@ enum Theme: String {
     }
     
     var mainColor: Color {
-        Color(rawValue)
+//        Color(rawValue)
+        switch self {
+        case .indigo:
+            return .indigo
+        case .orange:
+            return .orange
+        case .purple:
+            return .purple
+        case .teal:
+            return .teal
+        case .yellow:
+            return .yellow
+        default:
+            return Color(rawValue)
+        }
     }
 }
