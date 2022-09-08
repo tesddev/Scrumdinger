@@ -47,6 +47,8 @@ enum Theme: String {
             return .teal
         case .yellow:
             return .yellow
+        case .poppy:
+            return .red
         default:
             return Color(rawValue)
         }
