@@ -22,6 +22,11 @@ struct ScrumsView: View {
             }
         }
         .navigationTitle(Text("Daily Scrums"))
+        .toolbar {
+            Button(action: {}) {
+                Image(systemName: "plus")
+            }
+        }
     }
 }
 
