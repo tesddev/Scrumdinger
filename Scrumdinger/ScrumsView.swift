@@ -21,6 +21,7 @@ struct ScrumsView: View {
                 .listRowBackground(scrum.theme.mainColor)
             }
         }
+        .navigationTitle(Text("Daily Scrums"))
     }
 }
 
