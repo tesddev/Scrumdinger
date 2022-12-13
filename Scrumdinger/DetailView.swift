@@ -10,7 +10,12 @@ import SwiftUI
 struct DetailView: View {
     let scrum: DailyScrum
     var body: some View {
-        Text("Hello, World!")
+        List {
+            Section(header: Text("Meeting Info")) {
+                Label("Start Meeting", systemImage: "timer")
+                    .accessibilityLabel("timer image")
+            }
+        }
     }
 }
 
