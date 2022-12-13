@@ -2,7 +2,7 @@
 //  DetailView.swift
 //  Scrumdinger
 //
-//  Created by GIGL iOS on 13/12/2022.
+//  Created by Tes on 13/12/2022.
 //
 
 import SwiftUI

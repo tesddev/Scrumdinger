@@ -2,7 +2,7 @@
 //  DailyScrum.swift
 //  Scrumdinger
 //
-//  Created by GIGL iOS on 14/07/2022.
+//  Created by Tes on 14/07/2022.
 //
 
 import Foundation
