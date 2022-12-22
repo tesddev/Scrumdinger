@@ -14,6 +14,11 @@ struct DetailEditView: View {
         Form {
             Section(header: Text("Meeting Info")) {
                 TextField("Title", text: $data.title)
+                HStack {
+                    Slider(value: $data.lengthInMinutes,in: 5...30, step: 1) {
+                        Text("Length")
+                    }
+                }
             }
         }
     }
