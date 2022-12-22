@@ -18,6 +18,8 @@ struct DetailEditView: View {
                     Slider(value: $data.lengthInMinutes,in: 5...30, step: 1) {
                         Text("Length")
                     }
+                    Spacer()
+                    Text("\(Int(data.lengthInMinutes))")
                 }
             }
         }
