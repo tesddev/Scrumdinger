@@ -30,6 +30,9 @@ struct DetailEditView: View {
                 .onDelete { indices in
                     data.attendees.remove(atOffsets: indices)
                 }
+                HStack {
+                    TextField("New Attendee", text: $newAttendeeName)
+                }
             }
         }
     }
