@@ -41,7 +41,6 @@ struct DetailView: View {
                     List {
                         Label(attendee.name, systemImage: "person")
                     }
-                    .foregroundColor(.black)
                 }
             }
         }
