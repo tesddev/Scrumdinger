@@ -41,6 +41,7 @@ struct DetailEditView: View {
                     }) {
                         Image(systemName: "plus.circle.fill")
                     }
+                    .disabled(newAttendeeName.isEmpty)
                 }
             }
         }
