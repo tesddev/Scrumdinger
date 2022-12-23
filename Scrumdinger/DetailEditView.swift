@@ -22,6 +22,8 @@ struct DetailEditView: View {
                     Text("\(Int(data.lengthInMinutes))")
                 }
             }
+            Section(header: Text("Attendees")) {
+            }
         }
     }
 }
