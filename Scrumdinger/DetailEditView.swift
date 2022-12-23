@@ -26,6 +26,9 @@ struct DetailEditView: View {
                 ForEach(data.attendees) { attendee in
                     Text(attendee.name)
                 }
+                .onDelete { indices in
+                    data.attendees.remove(atOffsets: indices)
+                }
             }
         }
     }
