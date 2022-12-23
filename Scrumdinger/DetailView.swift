@@ -55,6 +55,13 @@ struct DetailView: View {
             NavigationView {
                 DetailEditView()
                     .navigationTitle(scrum.title)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("cancel") {
+                                isPresentingEditView = false
+                            }
+                        }
+                    }
             }
         }
     }
