@@ -54,6 +54,7 @@ struct DetailView: View {
         .sheet(isPresented: $isPresentingEditView) {
             NavigationView {
                 DetailEditView()
+                    .navigationTitle(scrum.title)
             }
         }
     }
