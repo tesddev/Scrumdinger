@@ -2,7 +2,7 @@
 //  ThemeView.swift
 //  Scrumdinger
 //
-//  Created by GIGL iOS on 28/12/2022.
+//  Created by Tes on 28/12/2022.
 //
 
 import SwiftUI
