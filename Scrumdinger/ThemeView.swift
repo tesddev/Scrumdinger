@@ -14,6 +14,7 @@ struct ThemeView: View {
             RoundedRectangle(cornerRadius: 4)
                 .fill(theme.mainColor)
             Label(theme.name, systemImage: "paintpalette")
+                .padding(4)
         }
         .foregroundColor(theme.accentColor)
         .fixedSize(horizontal: false, vertical: true)
