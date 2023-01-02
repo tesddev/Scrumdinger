@@ -24,7 +24,7 @@ enum Theme: String, CaseIterable, Identifiable {
     case tan
     case teal
     case yellow
-    
+
     var accentColor: Color {
         switch self {
             case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow:
@@ -33,7 +33,7 @@ enum Theme: String, CaseIterable, Identifiable {
                 return .white
         }
     }
-    
+
     var mainColor: Color {
 //        Color(rawValue)
         switch self {
@@ -53,11 +53,11 @@ enum Theme: String, CaseIterable, Identifiable {
             return Color(rawValue)
         }
     }
-    
+
     var name: String {
         return rawValue.capitalized
     }
-    
+
     var id: String {
         name
     }
