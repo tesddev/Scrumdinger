@@ -35,23 +35,7 @@ enum Theme: String, CaseIterable, Identifiable {
     }
 
     var mainColor: Color {
-//        Color(rawValue)
-        switch self {
-        case .indigo:
-            return .indigo
-        case .orange:
-            return .orange
-        case .purple:
-            return .purple
-        case .teal:
-            return .teal
-        case .yellow:
-            return .yellow
-        case .poppy:
-            return .red
-        default:
-            return Color(rawValue)
-        }
+        Color(rawValue)
     }
 
     var name: String {
