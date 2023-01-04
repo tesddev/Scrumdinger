@@ -17,9 +17,13 @@ struct MeetingFooterView: View {
     private var isLastSpeaker: Bool {
         return speakers.dropLast().allSatisfy{ $0.isCompleted }
     }
+    private var speakerText: String {
+        guard let speakerNumer = speakerNumer else { return "No more speakers"}
+        return "Speaker \(speakerNumer) of \(speakers.count)"
+    }
     var body: some View {
         HStack {
-            Text("Speaker 1 of 3")
+            Text (speakerText)
             Spacer()
             Button(action: {}){
                 Image(systemName: "forward.fill")
