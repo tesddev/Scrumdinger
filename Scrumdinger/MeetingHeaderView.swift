@@ -2,7 +2,7 @@
 //  MeetingHeaderView.swift
 //  Scrumdinger
 //
-//  Created by GIGL iOS on 04/01/2023.
+//  Created by Tes on 04/01/2023.
 //
 
 import SwiftUI
