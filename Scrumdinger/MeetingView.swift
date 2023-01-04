@@ -33,6 +33,9 @@ struct MeetingView: View {
                 scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
                 scrumTimer.startScrum()
             }
+            .onDisappear{
+                scrumTimer.stopScrum()
+            }
             .navigationBarTitleDisplayMode(.inline)
         }
     }
