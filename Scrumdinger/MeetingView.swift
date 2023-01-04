@@ -43,8 +43,9 @@ struct MeetingView: View {
                 }
             }
             .padding()
+            .foregroundColor(scrum.theme.accentColor)
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .foregroundColor(scrum.theme.accentColor)
     }
 }
 
