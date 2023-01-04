@@ -9,18 +9,20 @@ import SwiftUI
 
 struct MeetingHeaderView: View {
     var body: some View {
-        ProgressView(value: 5, total: 15)
-        HStack{
-            VStack(alignment: .leading) {
-                Text("Seconds Elapsed")
-                    .font(.caption)
-                Label("300", systemImage: "hourglass.bottomhalf.fill")
-            }
-            Spacer()
-            VStack(alignment: .trailing) {
-                Text("Seconds Remaining")
-                    .font(.caption)
-                Label("600", systemImage: "hourglass.tophalf.fill")
+        VStack {
+            ProgressView(value: 5, total: 15)
+            HStack{
+                VStack(alignment: .leading) {
+                    Text("Seconds Elapsed")
+                        .font(.caption)
+                    Label("300", systemImage: "hourglass.bottomhalf.fill")
+                }
+                Spacer()
+                VStack(alignment: .trailing) {
+                    Text("Seconds Remaining")
+                        .font(.caption)
+                    Label("600", systemImage: "hourglass.tophalf.fill")
+                }
             }
         }
         .accessibilityElement(children: .ignore)
