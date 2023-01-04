@@ -2,14 +2,21 @@
 //  MeetingFooterView.swift
 //  Scrumdinger
 //
-//  Created by GIGL iOS on 04/01/2023.
+//  Created by Tes on 04/01/2023.
 //
 
 import SwiftUI
 
 struct MeetingFooterView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text("Speaker 1 of 3")
+            Spacer()
+            Button(action: {}){
+                Image(systemName: "forward.fill")
+            }
+            .accessibilityLabel("Next speaker")
+        }
     }
 }
 
