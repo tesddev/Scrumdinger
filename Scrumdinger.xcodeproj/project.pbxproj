@@ -20,6 +20,7 @@
 		82C0C69B287C71610068D7BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C0C69A287C71610068D7BB /* Preview Assets.xcassets */; };
 		82C0C6A3287CE1C40068D7BB /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C0C6A2287CE1C40068D7BB /* Themes.swift */; };
 		82C95FD728C8D414002E0657 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C95FD628C8D414002E0657 /* ScrumsView.swift */; };
+		82EC781C2965C2AF001E8AAB /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC781B2965C2AF001E8AAB /* MeetingHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		82C0C69A287C71610068D7BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		82C0C6A2287CE1C40068D7BB /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		82C95FD628C8D414002E0657 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
+		82EC781B2965C2AF001E8AAB /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				82C0C699287C71610068D7BB /* Preview Content */,
 				82525484295C91650087081A /* ThemeView.swift */,
 				82525486295C953A0087081A /* ThemePicker.swift */,
+				82EC781B2965C2AF001E8AAB /* MeetingHeaderView.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				82525487295C953A0087081A /* ThemePicker.swift in Sources */,
 				8237D73A2880BE2400911091 /* DailyScrum.swift in Sources */,
 				8239EFAC29487BE100F1DDC1 /* DetailView.swift in Sources */,
+				82EC781C2965C2AF001E8AAB /* MeetingHeaderView.swift in Sources */,
 				82A7FEB42954D2D40035158F /* DetailEditView.swift in Sources */,
 				8237D73E2880CCC300911091 /* TrailingIconLabelStyles.swift in Sources */,
 				82C0C696287C715F0068D7BB /* MeetingView.swift in Sources */,
