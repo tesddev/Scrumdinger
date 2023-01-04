@@ -13,9 +13,13 @@ struct MeetingHeaderView: View {
     private var totalSeconds: Int {
         secondsElapsed + secondsRemaining
     }
+    private var progress: Double {
+        guard totalSeconds > 0 else { return 1}
+        return Double(secondsElapsed) / Double(totalSeconds)
+    }
     var body: some View {
         VStack {
-            ProgressView(value: 5, total: 15)
+            ProgressView(value: progress)
             HStack{
                 VStack(alignment: .leading) {
                     Text("Seconds Elapsed")
