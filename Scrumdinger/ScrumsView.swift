@@ -41,6 +41,8 @@ struct ScrumsView: View {
                         }
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Add") {
+                                let newScrum = DailyScrum(data: newScrumData)
+                                scrums.append(newScrum)
                                 isPresentingNewScrumView = false
                             }
                         }
