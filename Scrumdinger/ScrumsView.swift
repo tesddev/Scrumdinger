@@ -23,7 +23,9 @@ struct ScrumsView: View {
         }
         .navigationTitle(Text("Daily Scrums"))
         .toolbar {
-            Button(action: {}) {
+            Button(action: {
+                isPresentingNewScrumView = true
+            }) {
                 Image(systemName: "plus")
             }
             .accessibilityLabel("New Scrum")
