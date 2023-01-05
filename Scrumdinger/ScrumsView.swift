@@ -33,6 +33,18 @@ struct ScrumsView: View {
         .sheet(isPresented: $isPresentingNewScrumView) {
             NavigationView {
                 DetailEditView(data: $newScrumData)
+                    .toolbar {
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Dismiss") {
+                                isPresentingNewScrumView = false
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Add") {
+                                isPresentingNewScrumView = false
+                            }
+                        }
+                    }
             }
         }
     }
