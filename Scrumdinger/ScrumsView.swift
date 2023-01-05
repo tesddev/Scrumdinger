@@ -37,6 +37,7 @@ struct ScrumsView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Dismiss") {
                                 isPresentingNewScrumView = false
+                                newScrumData = DailyScrum.Data()
                             }
                         }
                         ToolbarItem(placement: .confirmationAction) {
@@ -44,6 +45,7 @@ struct ScrumsView: View {
                                 let newScrum = DailyScrum(data: newScrumData)
                                 scrums.append(newScrum)
                                 isPresentingNewScrumView = false
+                                newScrumData = DailyScrum.Data()
                             }
                         }
                     }
