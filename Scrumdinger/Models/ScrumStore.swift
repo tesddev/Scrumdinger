@@ -18,4 +18,8 @@ class ScrumStore: ObservableObject {
                                     create: false)
         .appendingPathComponent("scrums.data")
     }
+    
+    static func load(completion: @escaping (Result<[DailyScrum], Error>) -> Void) {
+        
+    }
 }
