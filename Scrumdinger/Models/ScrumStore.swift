@@ -45,6 +45,7 @@ class ScrumStore: ObservableObject {
         DispatchQueue.global(qos: .background).async {
             do {
                 let data = try JSONEncoder().encode(scrums)
+                let outFile = try fileURL()
             } catch  {
                 
             }
