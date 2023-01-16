@@ -29,6 +29,7 @@ class ScrumStore: ObservableObject {
                     }
                     return
                 }
+                let dailyScrums = try JSONDecoder().decode([DailyScrum].self, from: file.availableData)
             } catch  {
             }
         }
