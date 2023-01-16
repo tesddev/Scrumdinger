@@ -34,6 +34,9 @@ class ScrumStore: ObservableObject {
                     completion(.success(dailyScrums))
                 }
             } catch  {
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
             }
         }
     }
