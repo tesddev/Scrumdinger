@@ -16,6 +16,11 @@ struct ScrumdingerApp: App {
             NavigationView {
                 ScrumsView(scrums: $store.scrums)
             }
+            .onAppear{
+                ScrumStore.load { result in
+                    
+                }
+            }
         }
     }
 }
