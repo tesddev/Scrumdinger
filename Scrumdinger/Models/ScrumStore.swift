@@ -41,12 +41,15 @@ class ScrumStore: ObservableObject {
         }
     }
     
-    static func save(scrums: [DailyScrum], completion: (Result<Int, Error>) -> Void) {
+    static func save(scrums: [DailyScrum], completion: @escaping (Result<Int, Error>) -> Void) {
         DispatchQueue.global(qos: .background).async {
             do {
                 let data = try JSONEncoder().encode(scrums)
                 let outFile = try fileURL()
                 try data.write(to: outFile)
+                DispatchQueue.main.async {
+                    completion(.success(scrums.count))
+                }
             } catch  {
                 
             }
