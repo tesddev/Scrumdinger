@@ -46,6 +46,7 @@ class ScrumStore: ObservableObject {
             do {
                 let data = try JSONEncoder().encode(scrums)
                 let outFile = try fileURL()
+                try data.write(to: outFile)
             } catch  {
                 
             }
