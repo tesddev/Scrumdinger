@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ScrumsView: View {
     @Binding var scrums: [DailyScrum]
+    @Environment(\.scenePhase) private var scenePhase
     @State private var isPresentingNewScrumView = false
     @State private var newScrumData = DailyScrum.Data()
     
