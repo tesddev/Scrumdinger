@@ -15,6 +15,8 @@ struct ErrorView: View {
             Text("An error has occurred!")
                 .font(.title)
                 .padding(.bottom)
+            Text(errorWrapper.error.localizedDescription)
+                .font(.headline)
             Spacer()
         }
         .padding()
