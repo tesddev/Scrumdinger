@@ -40,7 +40,9 @@ struct ScrumdingerApp: App {
 //                }
 //            }
             .task {
-                
+                do {
+                } catch {
+                }
             }
         }
     }
