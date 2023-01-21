@@ -41,6 +41,7 @@ struct ScrumdingerApp: App {
 //            }
             .task {
                 do {
+                    store.scrums = try await ScrumStore.load()
                 } catch {
                 }
             }
