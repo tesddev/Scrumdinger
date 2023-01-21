@@ -21,7 +21,11 @@ struct ScrumdingerApp: App {
 //                        }
 //                    }
                     Task {
-                        
+                        do {
+                            
+                        } catch {
+                            
+                        }
                     }
                 }
             }
