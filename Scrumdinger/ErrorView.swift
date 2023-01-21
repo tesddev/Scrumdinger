@@ -11,7 +11,12 @@ struct ErrorView: View {
     let errorWrapper: ErrorWrapper
     
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text("Hello, World!")
+            Spacer()
+        }
+        .padding()
+        
     }
 }
 
