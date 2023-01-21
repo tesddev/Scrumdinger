@@ -30,7 +30,9 @@ struct ErrorView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    
+                    Button("Dismiss"){
+                        dismiss()
+                    }
                 }
             }
         }
