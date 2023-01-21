@@ -22,7 +22,7 @@ struct ScrumdingerApp: App {
 //                    }
                     Task {
                         do {
-                            
+                            try await ScrumStore.save(scrums: store.scrums)
                         } catch {
                             
                         }
