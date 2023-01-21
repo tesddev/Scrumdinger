@@ -56,7 +56,9 @@ class ScrumStore: ObservableObject {
     
     @discardableResult
     static func save() async throws -> Int {
-        0
+        try await withCheckedThrowingContinuation{ continuation in
+            
+        }
     }
     
     static func save(scrums: [DailyScrum], completion: @escaping (Result<Int, Error>) -> Void) {
