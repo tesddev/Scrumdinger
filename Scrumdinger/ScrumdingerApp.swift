@@ -43,6 +43,7 @@ struct ScrumdingerApp: App {
                 do {
                     store.scrums = try await ScrumStore.load()
                 } catch {
+                    fatalError(error.localizedDescription)
                 }
             }
         }
