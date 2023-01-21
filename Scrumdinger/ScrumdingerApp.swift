@@ -29,15 +29,18 @@ struct ScrumdingerApp: App {
                     }
                 }
             }
-            .onAppear{
-                ScrumStore.load { result in
-                    switch result {
-                    case .failure(let error):
-                        fatalError(error.localizedDescription)
-                    case .success(let scrums):
-                        store.scrums = scrums
-                    }
-                }
+//            .onAppear{
+//                ScrumStore.load { result in
+//                    switch result {
+//                    case .failure(let error):
+//                        fatalError(error.localizedDescription)
+//                    case .success(let scrums):
+//                        store.scrums = scrums
+//                    }
+//                }
+//            }
+            .task {
+                
             }
         }
     }
