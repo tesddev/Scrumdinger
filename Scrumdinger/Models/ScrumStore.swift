@@ -54,6 +54,11 @@ class ScrumStore: ObservableObject {
         }
     }
     
+    @discardableResult
+    static func save() async throws -> Int {
+        0
+    }
+    
     static func save(scrums: [DailyScrum], completion: @escaping (Result<Int, Error>) -> Void) {
         DispatchQueue.global(qos: .background).async {
             do {
