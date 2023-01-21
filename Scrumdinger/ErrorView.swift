@@ -12,7 +12,9 @@ struct ErrorView: View {
     
     var body: some View {
         VStack {
-            Text("Hello, World!")
+            Text("An error has occurred!")
+                .font(.title)
+                .padding(.bottom)
             Spacer()
         }
         .padding()
