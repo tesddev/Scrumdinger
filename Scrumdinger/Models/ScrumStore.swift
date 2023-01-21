@@ -58,7 +58,12 @@ class ScrumStore: ObservableObject {
     static func save(scrums: [DailyScrum]) async throws -> Int {
         try await withCheckedThrowingContinuation{ continuation in
             save(scrums: scrums) { result in
-                
+                switch result{
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                case .success(let scrumSaved):
+                    continuation.resume(returning: scrumSaved)
+                }
             }
         }
     }
