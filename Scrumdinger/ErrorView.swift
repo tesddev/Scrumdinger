@@ -28,6 +28,11 @@ struct ErrorView: View {
             .background(.ultraThinMaterial)
             .cornerRadius(16)
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    
+                }
+            }
         }
     }
 }
