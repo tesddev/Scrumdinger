@@ -24,7 +24,7 @@ struct ScrumdingerApp: App {
                         do {
                             try await ScrumStore.save(scrums: store.scrums)
                         } catch {
-                            
+                            fatalError(error.localizedDescription)
                         }
                     }
                 }
